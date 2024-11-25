@@ -13,7 +13,7 @@ class AuthRoutes {
     }
     ;
     routes() {
-        this.router.get("/register", this.controllers.registerUser);
+        this.router.post("/register", this.controllers.registerUser);
     }
     ;
     getRoute() {

@@ -24,6 +24,9 @@ class AuthControllers {
                 });
             }
             catch (err) {
+                res.status(500).send({
+                    message: "NoK",
+                });
                 next(err);
             }
             ;
@@ -33,3 +36,4 @@ class AuthControllers {
 }
 exports.default = AuthControllers;
 ;
+// update trigger

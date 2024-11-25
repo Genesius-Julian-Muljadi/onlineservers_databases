@@ -51,7 +51,7 @@ class AuthServices {
                 return user;
             }
             catch (err) {
-                next(err);
+                throw (err);
             }
             ;
         });
