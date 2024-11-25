@@ -11,7 +11,7 @@ export default class AuthRoutes {
     };
 
     private routes() {
-        this.router.get("/register", this.controllers.registerUser);
+        this.router.post("/register", this.controllers.registerUser);
     };
 
     public getRoute() {
