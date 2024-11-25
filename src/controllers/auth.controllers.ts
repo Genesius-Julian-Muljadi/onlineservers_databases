@@ -11,6 +11,9 @@ export default class AuthControllers {
                 data: user,
             });
         } catch (err) {
+            res.status(500).send({
+                message: "NoK",
+            });
             next(err);
         };
     };

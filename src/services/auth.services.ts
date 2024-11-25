@@ -12,7 +12,7 @@ export default class AuthServices {
 
             return user;
         } catch (err) {
-            throw(err);
+            throw (err);
         };
     };
 
@@ -36,7 +36,7 @@ export default class AuthServices {
 
             return user;
         } catch (err) {
-            next(err);
+            throw (err);
         };
     };
 };
